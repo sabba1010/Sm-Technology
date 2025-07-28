@@ -4,15 +4,19 @@ import blogHair from "../assets/blog-hair.png";
 import blogProducts from "../assets/blog-products.png";
 
 const LatestNewsBlog = () => {
-  const fixedWidth = "w-[424px]";
-  const fixedHeight = "h-[347px]";
+  // For md/lg fixed width and height:
+  const fixedWidth = "md:w-[424px]";
+  const fixedHeight = "md:h-[347px]";
 
   return (
     <section className="max-w-7xl mx-auto px-4 py-20">
       <h2 className="text-3xl font-bold text-center mb-14">Latest News and Blog</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 justify-center">
-        <div className={`flex flex-col justify-between gap-6 p-6 rounded-lg shadow-md bg-white ${fixedWidth} ${fixedHeight} mx-auto`}>
+      {/* First Grid */}
+      <div className="grid grid-cols-1 gap-6 mb-12 justify-center md:grid-cols-2 lg:grid-cols-3">
+        <div
+          className={`flex flex-col justify-between gap-6 p-6 rounded-lg shadow-md bg-white mx-auto ${fixedWidth} ${fixedHeight} w-full`}
+        >
           <div className="text-left">
             <h3 className="font-bold text-xl mb-2">Embrace the Art of Color Harmony</h3>
             <p className="text-base text-gray-700 leading-relaxed">
@@ -25,7 +29,9 @@ const LatestNewsBlog = () => {
           </button>
         </div>
 
-        <div className={`${fixedWidth} ${fixedHeight} mx-auto rounded-lg shadow-md overflow-hidden`}>
+        <div
+          className={`mx-auto rounded-lg shadow-md overflow-hidden ${fixedWidth} ${fixedHeight} w-full`}
+        >
           <img
             src={blogFace}
             alt="Face cream application"
@@ -33,7 +39,9 @@ const LatestNewsBlog = () => {
           />
         </div>
 
-        <div className={`flex flex-col justify-between gap-6 p-6 rounded-lg shadow-md bg-white ${fixedWidth} ${fixedHeight} mx-auto`}>
+        <div
+          className={`flex flex-col justify-between gap-6 p-6 rounded-lg shadow-md bg-white mx-auto ${fixedWidth} ${fixedHeight} w-full`}
+        >
           <div className="text-left">
             <h3 className="font-bold text-xl mb-2">Embrace the Art of Color Harmony</h3>
             <p className="text-base text-gray-700 leading-relaxed">
@@ -47,8 +55,11 @@ const LatestNewsBlog = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 justify-center">
-        <div className={`${fixedWidth} ${fixedHeight} mx-auto rounded-lg shadow-md overflow-hidden`}>
+      {/* Second Grid */}
+      <div className="grid grid-cols-1 gap-6 justify-center lg:grid-cols-3">
+        <div
+          className={`mx-auto rounded-lg shadow-md overflow-hidden ${fixedWidth} ${fixedHeight} w-full`}
+        >
           <img
             src={blogHair}
             alt="Hair wash"
@@ -56,7 +67,9 @@ const LatestNewsBlog = () => {
           />
         </div>
 
-        <div className={`flex flex-col justify-between gap-6 p-6 rounded-lg shadow-md bg-white ${fixedWidth} ${fixedHeight} mx-auto`}>
+        <div
+          className={`flex flex-col justify-between gap-6 p-6 rounded-lg shadow-md bg-white mx-auto ${fixedWidth} ${fixedHeight} w-full`}
+        >
           <div className="text-left">
             <h3 className="font-bold text-xl mb-2">Embrace the Art of Color Harmony</h3>
             <p className="text-base text-gray-700 leading-relaxed">
@@ -69,7 +82,9 @@ const LatestNewsBlog = () => {
           </button>
         </div>
 
-        <div className={`${fixedWidth} ${fixedHeight} mx-auto rounded-lg shadow-md overflow-hidden`}>
+        <div
+          className={`mx-auto rounded-lg shadow-md overflow-hidden ${fixedWidth} ${fixedHeight} w-full`}
+        >
           <img
             src={blogProducts}
             alt="Skincare Products"
